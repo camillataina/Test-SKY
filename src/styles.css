@@ -1,0 +1,623 @@
+
+*{ 
+  margin:0px;
+  padding:0px;
+}
+  body {
+    font-family: sans-serif;
+  }
+  #conteiner{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #logo{
+    width: 100px;
+    margin:10px 10px 10px 120px;
+  }
+  .logoi{
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    margin-top: 23px;
+  }
+  .logof{
+    width: 20px;
+    height: 20px;
+    margin-left: 150px;
+    margin-top: 23px;
+  }
+  .logon{
+    width: 20px;
+    height: 20px;
+    margin-left: 280px;
+    margin-top: 23px;
+  }
+  .logop{
+    width: 20px;
+    margin-left: 20px;
+    margin-top: 23px;
+    height: 20px;
+  }
+  #header{
+    background-color: #f1f2fa;
+    width: 100%;
+    height: 60px;
+    display:flex;
+    border-bottom:1px solid grey;
+  }
+  .text{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 26px;
+    color:#666766;
+  }
+  #search{
+    margin-left: 2px;
+    margin-top:22px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color:#f1f2fa;
+    box-shadow:black;
+  }
+  #conteudo{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    padding-top: 10px;
+    border-bottom:1px solid grey;
+  }
+  .ctn{
+    font-size: 18px;
+    margin-left: 260px;
+  }
+  #carroussel-2 {
+    display: flex;
+    justify-content: center;
+    max-height: 500px;
+    overflow-x: scroll;
+  }
+  .filme-img{
+    width: 200px;
+    padding: 10px;
+	  margin: 1rem;
+  }
+  #logoq{
+    width: 100px;
+    margin-left: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .logoh{
+    width: 20px;
+    margin-left: 720px;
+    margin-top: 25px;
+  }
+  .logoj{
+    width: 20px;
+    margin-left: 20px;
+    margin-top: 25px;
+  }
+  .logok{
+    width: 20px;
+    margin-left: 20px;
+    margin-top: 25px;
+  }
+  .logol{  
+    width: 20px;
+    margin-left: 20px;
+    margin-top: 25px;
+  }
+  #baixo{
+    background-color: #f1f2fa;
+    display:flex;
+    box-shadow: 0px 0px 10px #00000073;
+    border-top:1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  #logow{
+    width: 50px;
+    height:50px;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+  .descricao{
+    margin-left: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .caixa{
+    background-color: #f1f2fa;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    height: 360px;
+  }
+  .sb{
+    font-size:16px;
+    padding-top: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  p{
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 10px;
+  }
+  .caixa-1{
+    flex-direction: column;
+    margin-left: 50px;
+    display: flex;
+  }
+  .caixa-2{
+    padding-left: 110px;
+  }
+  .caixa-3{
+    padding-left: 20px;
+  }
+  #caixa-4{
+    flex-direction: row;
+    margin-left: 135px;
+    margin-top:20px;
+  }
+  #caixa-5{
+    flex-direction: row;
+    display: inline;
+    display:flex;
+    float: left;
+  }
+  #rodape{
+    margin-left: 120px;
+    font-size:14px;
+    margin-bottom: 10px;
+  }
+  h6{
+    text-align: justify;
+    font-size: 12px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 10px;
+  }
+  #final{
+    max-width: 100%;
+    background-color: #f1f2fa;
+    height: 60px;
+  }
+  #apple{
+     height: 30px;
+  }
+  #google{
+     height: 30px;
+  }
+  #checkbox-menu{
+    display:none;
+  }
+
+  /*Responsividade*/
+  @media screen and (min-width:0px) and (max-width:767px){
+    #conteiner{
+      flex-direction: column;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    #logo{
+      width: 100px;
+      margin:10px 10px 10px 20px;
+    }
+    .logoi{
+      width: 20px;
+      height: 20px;
+      margin-left: 30px;
+      margin-top: 23px;
+      display: none;
+    }
+    .logof{
+      width: 20px;
+      height: 20px;
+      margin-left: 150px;
+      margin-top: 23px;
+      display: none;
+    }
+    .logon{
+      width: 20px;
+      height: 20px;
+      margin-left: 280px;
+      margin-top: 23px;
+      display: none;
+    }
+    .logop{
+      width: 20px;
+      margin-left: 20px;
+      margin-top: 23px;
+      height: 20px;
+      display: none;
+    }
+    #header{
+      background-color: #f1f2fa;
+      width: 100%;
+      height: 60px;
+      display:block;
+      border-bottom:1px solid grey;
+    }
+    .text{
+      font-size: 15px;
+      margin-left: 10px;
+      margin-top: 26px;
+      color:#666766;
+      display:none;
+    }
+    #search{
+      margin-left: 2px;
+      margin-top:22px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      background-color:#f1f2fa;
+      box-shadow:black;
+      display: none;
+    }
+    #checkbox-menu{
+      position: absolute;
+      opacity: 0;
+    }
+    label{
+      cursor: pointer;
+      position: relative;
+      display: block;
+      height: 22px;
+      width: 30px;
+      float:right;
+      margin-top:-40px;
+      margin-right: 30px;;
+    }
+    label span{
+      position: absolute;
+      display: block;
+      height: 5px;
+      width: 100%;
+      border-radius: 30px;
+      background-color: black;
+    }
+    labbel span:nth-child(1){
+      top: 8px;
+    }
+    label span:nth-child(2){
+      top: 0px;
+    }
+    label span:nth-child(3){
+      top: 16px;
+    }
+    #checkbox-menu+label span:nth-child(1){
+      top: 8px;
+    }
+    #checkbox-menu+label span:nth-child(2){
+      top:0px;
+    }
+    #checkbox-meu+label span:nth-child(3){
+      top: 18px;
+    }
+    #conteudo{
+      width: 100%;
+      height: 30px;
+      display: flex;
+      padding-top: 10px;
+      border-bottom:1px solid grey;
+    
+    }
+    .ctn{
+      font-size: 18px;
+      margin-left: 90px;
+      text-align: center;
+    }
+    #logoq{
+      width: 100px;
+      margin-left: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .logoh{
+      width:20px;
+      margin-left: 100px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .logoj{
+      width: 20px;
+      margin-left: 20px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+    .logok{
+      width: 20px;
+      margin-left: 20px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+    .logol{  
+      width: 20px;
+      margin-left: 20px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+    #baixo{
+      background-color: #f1f2fa;
+      display:block;
+      box-shadow: 0px 0px 10px #00000073;
+      border-top:1px solid grey;
+      border-bottom: 1px solid grey;
+    }
+    #logow{
+      width: 50px;
+      height:50px;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    .descricao{
+      margin-left: 15px;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-right: 150px;
+      color:red;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .caixa{
+      background-color: #f1f2fa;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      height: 800px;
+      flex-direction: column;
+    }
+    .sb{
+      font-size:16px;
+      text-align: left;
+      padding-top: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    p{
+      font-size: 14px;
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding-top: 10px;
+    }
+    .caixa-1{
+      flex-direction: column;
+      display: block;
+    }
+    .caixa-2{
+      padding-left: 50px;
+      flex-direction: column;
+    }
+    .caixa-3{
+      padding-left: 50px;
+      flex-direction: column;
+    }
+    #caixa-4{
+      flex-direction: row;
+      margin-left:60px;
+      margin-top:20px;
+    }
+    #caixa-5{
+      flex-direction: row;
+      display: inline;
+      display:flex;
+      float: left;
+    }
+    #rodape{
+      margin-left: 50px;
+      font-size:14px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+    h6{
+      text-align: center;
+      font-size: 12px;
+      margin-left: 20px;
+      margin-right:20px;
+      margin-bottom: 10px;
+    }
+    #final{
+      max-width: 100%;
+      background-color: #f1f2fa;
+      height: 100px;
+    }
+    #apple{
+       height: 30px;
+       display: none;
+    }
+    #google{
+       height: 30px;
+       display:none;
+    }
+  @media screen and (min-width:768px) and (max-width:1023px){
+    #conteiner{
+      flex-direction: column;
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+    #logo{
+      width: 100px;
+      margin:10px 10px 10px 30px;
+    }
+    .logoi{
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      margin-top: 23px;
+      margin-bottom: 20px;
+    }
+    .logof{
+      width: 20px;
+      height: 20px;
+      margin-left: 50px;
+      margin-top: 23px;
+      margin-bottom: 20px;
+    }
+    .logon{
+      width: 20px;
+      height: 20px;
+      margin-left: 70px;
+      margin-top: 23px;
+      margin-bottom: 20px;
+    }
+    .logop{
+      width: 20px;
+      margin-left: 20px;
+      margin-top: 23px;
+      height: 20px;
+      margin-bottom: 20px;
+    }
+    #header{
+      background-color: #f1f2fa;
+      width: 100%;
+      height: 60px;
+      border-bottom:1px solid grey;
+    }
+    .text{
+      font-size: 15px;
+      margin-left: 10px;
+      margin-top: 28px;
+      margin-bottom: 20px;
+      color:black;
+    }
+    #search{
+      margin-left: 2px;
+      width: 150px;
+      margin-top:23px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      background-color:#f1f2fa;
+      box-shadow:black;
+    }
+    #conteudo{
+      width: 100%;
+      height: 30px;
+      display: flex;
+      padding-top: 10px;
+      border-bottom:1px solid grey;
+    
+    }
+    .ctn{
+      font-size: 18px;
+      margin-left: 120px;
+      text-align: center;
+    }
+    #logoq{
+      width: 100px;
+      margin-left: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .logoh{
+      width:20px;
+      margin-left:250px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .logoj{
+      width: 20px;
+      margin-left: 20px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+    .logok{
+      width: 20px;
+      margin-left: 20px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+    .logol{  
+      width: 20px;
+      margin-left: 20px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+    #baixo{
+      background-color: #f1f2fa;
+      display:block;
+      box-shadow: 0px 0px 10px #00000073;
+      border-top:1px solid grey;
+      border-bottom: 1px solid grey;
+    }
+    #logow{
+      width: 50px;
+      height:50px;
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+    .descricao{
+      margin-left: 15px;
+      font-size: 16px;
+      margin-top: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .caixa{
+      background-color: #f1f2fa;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 100%;
+      height: 360px;
+    }
+    .sb{
+      font-size:16px;
+      padding-top: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    p{
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding-top: 10px;
+    }
+    .caixa-1{
+      flex-direction: column;
+      margin-left: 0px;
+      display: flex;
+    }
+    .caixa-2{
+      padding-left: 50px;
+    }
+    .caixa-3{
+      padding-left: 20px;
+    }
+    #caixa-4{
+      flex-direction: row;
+      margin-left: 60px;
+      margin-top:20px;
+    }
+    #caixa-5{
+      flex-direction: row;
+      display: inline;
+      display:flex;
+      float: left;
+    }
+    #rodape{
+      margin-left: 30px;
+      font-size:14px;
+      margin-bottom: 10px;
+    }
+    h6{
+      text-align: justify;
+      font-size: 12px;
+      margin-left: 30px;
+      margin-right: 50px;
+      margin-bottom: 10px;
+    }
+    #final{
+      max-width: 100%;
+      background-color: #f1f2fa;
+      height: 60px;
+    }
+    #apple{
+       height: 30px;
+    }
+    #google{
+       height: 30px;
+    }
+    #checkbox-menu{
+      display:none;
+    }
+  }
+}
